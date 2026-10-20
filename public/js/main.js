@@ -1,7 +1,7 @@
 /* ============================================================
-   Лендинг «Точечная доработка бизнес-софта» — оживление.
+   Персональный сайт «Евгений Холин — разработка с AI-агентами».
    Vanilla JS, без зависимостей.
-   - Плавный скролл hero → #contact
+   - Плавный скролл по якорным ссылкам a[data-scroll] (хедер)
    - Scroll-reveal секций (IntersectionObserver)
    - Sticky-хедер появляется после прокрутки за hero
    - Всё отключается при prefers-reduced-motion: reduce
@@ -11,7 +11,7 @@
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- Плавный скролл к #contact ----------
+  /* ---------- Плавный скролл по a[data-scroll] ----------
      CSS уже даёт scroll-behavior:smooth; JS нужен, чтобы
      корректно обработать клик и учесть reduce-motion. */
   document.querySelectorAll('a[data-scroll]').forEach(function (link) {

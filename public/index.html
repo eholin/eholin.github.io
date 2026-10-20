@@ -4,15 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Точечная доработка бизнес-софта — Евгений Холин</title>
-  <meta name="description" content="Точечная доработка и адаптация вашей CRM и внутренних инструментов под изменившиеся процессы. Один senior-инженер, недели вместо месяцев, без переписывания с нуля.">
+  <title>Евгений Холин — разработка с AI-агентами на практике</title>
+  <meta name="description" content="Тимлид и fullstack-разработчик, 15+ лет в разработке. Работаю с AI-агентами на коммерческих проектах и в собственном SaaS, пишу о том, что в этом реально работает.">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Точечная доработка бизнес-софта — Евгений Холин">
-  <meta property="og:description" content="Ваш бизнес-софт отстал от процессов. Приведём его в соответствие — за недели, без переписывания с нуля.">
+  <meta property="og:title" content="Евгений Холин — разработка с AI-агентами на практике">
+  <meta property="og:description" content="Код пишет агент, за результат отвечаю я. Кейсы, собственный SaaS и Telegram-канал о разработке с AI.">
   <meta property="og:image" content="https://eholin.github.io/assets/og-image.jpg">
   <meta property="og:url" content="https://eholin.github.io/">
+
+  <meta name="yandex-verification" content="e6af61262deb1f40">
 
   <link rel="icon" href="assets/favicon.ico">
 
@@ -22,181 +24,389 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113696163', 'ym');
+
+    ym(113696163, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <!-- /Yandex.Metrika counter -->
 </head>
 <body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/113696163" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
   <!-- ============================================================
-       Sticky-хедер (появляется после прокрутки за hero)
+       Sticky-хедер (появляется после прокрутки за hero).
+       Когда откроется #talks, добавить в навигацию пункт
+       <a class="site-nav__link" href="#talks" data-scroll>Выступления</a>
+       после «Канал».
        ============================================================ -->
   <header class="site-header" id="site-header">
     <div class="container site-header__inner">
-      <a class="wordmark" href="#hero">Евгений Холин</a>
-      <a class="btn-primary btn-primary--sm" href="https://t.me/eholin" target="_blank" rel="noopener">Написать</a>
+      <a class="wordmark" href="#hero" data-scroll>Евгений Холин</a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="Разделы страницы">
+          <a class="site-nav__link" href="#approach" data-scroll>Подход</a>
+          <a class="site-nav__link" href="#cases" data-scroll>Кейсы</a>
+          <a class="site-nav__link" href="#product" data-scroll>Oknoo.app</a>
+          <a class="site-nav__link" href="#channel" data-scroll>Канал</a>
+        </nav>
+        <a class="btn-primary btn-primary--sm" href="https://t.me/real_ai_development" target="_blank" rel="noopener">Читать канал</a>
+      </div>
     </div>
   </header>
 
   <main>
 
     <!-- ============================================================
-         Секция 1 — Hero
+         Hero
          ============================================================ -->
     <section class="hero" id="hero">
       <div class="container">
-        <p class="eyebrow hero__eyebrow">Доработка бизнес-софта</p>
-        <h1>Ваш бизнес-софт отстал от процессов. Приведём его в соответствие — за недели, без переписывания с нуля.</h1>
-        <p class="hero__sub">Для компаний, у которых уже есть своя CRM или внутренние инструменты, но бизнес изменился быстрее, чем за ним успел код.</p>
+        <p class="eyebrow hero__eyebrow">Разработка с AI-агентами · из практики</p>
+        <h1>Код пишет агент. За результат отвечаю я.</h1>
+        <p class="hero__sub">Евгений Холин&nbsp;— тимлид и fullstack-разработчик, 15+&nbsp;лет в разработке. Каждый день работаю с AI-агентами на коммерческих проектах и в собственном SaaS. В Telegram-канале пишу, что в этом реально работает, что ломается и чего это стоит.</p>
         <div class="hero__actions">
-          <a class="btn-primary" href="#contact" data-scroll>Обсудить задачу</a>
+          <a class="btn-primary" href="https://t.me/real_ai_development" target="_blank" rel="noopener">Читать канал</a>
+          <a class="btn-secondary" href="https://t.me/eholin" target="_blank" rel="noopener">Написать мне</a>
         </div>
+        <p class="hero__trust">
+          <span>15+&nbsp;лет в разработке</span><span aria-hidden="true">·</span><span>тимлид</span><span aria-hidden="true">·</span><span>собственный SaaS</span><span aria-hidden="true">·</span><span>канал о разработке с AI</span>
+        </p>
       </div>
     </section>
 
     <!-- ============================================================
-         Секция 2 — Три варианта
+         01 — Подход
          ============================================================ -->
-    <section class="section section--surface reveal" id="options">
+    <section class="section section--surface reveal" id="approach">
       <div class="container">
         <div class="section-head">
           <span class="section-head__num">01</span>
           <div>
-            <span class="eyebrow">Варианты</span>
-            <h2>Обычно выбор такой — и оба крайних варианта не про вашу задачу.</h2>
+            <span class="eyebrow">Подход</span>
+            <h2>Узкое место теперь не в написании кода, а в постановке задачи и проверке.</h2>
           </div>
         </div>
-        <div class="compare-grid">
-          <article class="option-card">
-            <span class="option-card__label">Вариант A</span>
-            <h3>Сделать самим / на AI-агентах</h3>
-            <p>Быстро и дёшево на старте. Но чем сложнее задача, тем чаще инструмент ломается на ровном месте и не доходит до рабочего результата. Скорее всего, вы это уже пробовали.</p>
-          </article>
-          <article class="option-card">
-            <span class="option-card__label">Вариант B</span>
-            <h3>Заказать команде / в агентстве</h3>
-            <p>Доведут до конца. Но это проект на полгода и больше, бюджет под целую команду и, часто, переписывание того, что и так работало.</p>
-          </article>
-          <article class="option-card option-card--featured">
-            <span class="option-card__pill">Рекомендую</span>
-            <h3>Точечная доработка</h3>
-            <p>Один senior-инженер адаптирует вашу существующую систему под новый процесс. Недели, а не месяцы. Не переписываем — дорабатываем.</p>
-          </article>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">01</div>
+            <h3>ТЗ важнее кода.</h3>
+            <p>Агент никогда не скажет «нет» и не признается, что не понял задачу. Поэтому итерации переезжают с кода на ТЗ: даю агенту цель и проверяемый результат, а не список правок.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">02</div>
+            <h3>Агент проверяет себя сам.</h3>
+            <p>Способ проверки входит в задачу: тесты, смоук-тест в браузере, сверка «база = API = страница». Без этого «работает на демо» ничего не значит.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">03</div>
+            <h3>За результат отвечает инженер.</h3>
+            <p>Архитектуру, границы задачи и ревью держу сам. Агент пишет черновик, а что уйдёт в прод, решаю я.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-         Секция 3 — «Вы пробовали AI»
+         02 — Кейсы
+         Новый кейс = копия <article class="case-card">.
+         Ссылка на пост — блок .case-card__foot (если поста нет, блок не выводится).
          ============================================================ -->
-    <section class="section reveal" id="tried-ai">
+    <section class="section reveal" id="cases">
       <div class="container">
         <div class="section-head">
           <span class="section-head__num">02</span>
           <div>
-            <span class="eyebrow">Почему не сработало</span>
-            <h2 class="h2-wide">Скорее всего, вы уже пробовали<br class="br-desktop"> решить это через <span class="hl">AI</span><span class="hl-tail">.</span></h2>
+            <span class="eyebrow">Кейсы</span>
+            <h2>Как это выглядит на реальных задачах.</h2>
+            <p class="section-head__lead">Рабочие проекты не называю, но цифры и ход решения настоящие.</p>
           </div>
         </div>
-        <p class="prose">И на простых кусках это сработало. А потом инструмент начал усложняться, ломаться там, где не должен, и так и не дошёл до результата, которым можно пользоваться. Дело не в том, что AI не подходит для таких задач. Дело в том, что у сборки не было архитектора — того, кто держит границы, отвечает за качество и не даёт системе развалиться под собственной сложностью.</p>
+
+        <div class="case-list">
+          <article class="case-card">
+            <div class="case-card__head">
+              <span class="case-card__label">Легаси · рефакторинг</span>
+              <h3>10&nbsp;лет техдолга за 6&nbsp;месяцев: монолит, один разработчик и AI-агент</h3>
+            </div>
+            <div class="case-grid">
+              <div class="case-col">
+                <div class="case-col__head">
+                  <span class="case-col__num">01</span>
+                  <span class="case-col__rule"></span>
+                </div>
+                <div class="case-col__label">Проблема</div>
+                <p>Монолит, который развивался 10&nbsp;лет: больше 2&nbsp;000 PHP-файлов и 180&nbsp;тысяч строк, PHP&nbsp;7.4, устаревший фреймворк, god-модели на тысячи строк. Рефакторинг такого масштаба было не продать бизнесу: долго, дорого, и фичи на это время встают.</p>
+              </div>
+              <div class="case-col">
+                <div class="case-col__head">
+                  <span class="case-col__num">02</span>
+                  <span class="case-col__rule"></span>
+                </div>
+                <div class="case-col__label">Решение</div>
+                <p>Сначала агент покрыл проект автотестами, это страховочная сетка. Дальше поэтапно: PHP&nbsp;8.4 и свежие зависимости, переход с MVC на API + SPA, чистая архитектура. Правила из ADR стали автоматическими проверками (PHPStan, deptrac). Работал в одиночку и параллельно с продуктовыми задачами.</p>
+              </div>
+              <div class="case-col case-col--result">
+                <div class="case-col__head">
+                  <span class="case-col__num">03</span>
+                  <span class="case-col__rule"></span>
+                </div>
+                <div class="case-col__label">Результат</div>
+                <p>Техдолг почти закрыт, а багов в проде почти не было. Чем чище становилась архитектура, тем реже ошибался агент: рефакторинг ускорял сам себя.</p>
+                <div class="case-metrics">
+                  <div>
+                    <div class="case-metric__value">6&nbsp;мес</div>
+                    <div class="case-metric__label">без остановки разработки фич</div>
+                  </div>
+                  <div>
+                    <div class="case-metric__value">2–3&nbsp;дня</div>
+                    <div class="case-metric__label">на продуктовую задачу с тестами вместо недели</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Когда будет запись доклада ([TALK_URL]), добавить сюда .case-card__foot со ссылкой. -->
+          </article>
+
+          <article class="case-card">
+            <div class="case-card__head">
+              <span class="case-card__label">Oknoo.app · аналитика</span>
+              <h3>176 конверсий и ни одной оплаты</h3>
+            </div>
+            <div class="case-grid">
+              <div class="case-col">
+                <div class="case-col__head">
+                  <span class="case-col__num">01</span>
+                  <span class="case-col__rule"></span>
+                </div>
+                <div class="case-col__label">Проблема</div>
+                <p>Кампания в Яндекс Директе принесла 176 конверсий и ни одной оплаты. Формально всё работало: кампания была обучена на нажатие кнопки на лендинге.</p>
+              </div>
+              <div class="case-col">
+                <div class="case-col__head">
+                  <span class="case-col__num">02</span>
+                  <span class="case-col__rule"></span>
+                </div>
+                <div class="case-col__label">Решение</div>
+                <p>Подключил агенту Директ, Метрику и данные о действиях внутри сервиса, и он свёл их вместе. Когда анализ стал регулярным, собрал отдельный бэкенд для агента, Backend for MCP: реплика вместо прода, обезличенные данные, готовые агрегаты вместо десятка запросов.</p>
+              </div>
+              <div class="case-col case-col--result">
+                <div class="case-col__head">
+                  <span class="case-col__num">03</span>
+                  <span class="case-col__rule"></span>
+                </div>
+                <div class="case-col__label">Результат</div>
+                <p>Оказалось, что аудитория кампании на 80% младше 18&nbsp;лет и приходит с сайтов с мобильными играми. Теперь кампании сравниваются по качеству трафика, а не по кликам.</p>
+                <div class="case-metrics">
+                  <div>
+                    <div class="case-metric__value">80%</div>
+                    <div class="case-metric__label">трафика младше 18&nbsp;лет</div>
+                  </div>
+                  <div>
+                    <div class="case-metric__value">1–2&nbsp;дня</div>
+                    <div class="case-metric__label">на первую версию бэкенда для агента</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case-card__foot">
+              <a class="text-link" href="https://t.me/real_ai_development/9" target="_blank" rel="noopener" aria-label="Подробно в канале: 176 конверсий и ни одной оплаты">Подробно в канале →</a>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-card__head">
+              <span class="case-card__label">Ecommerce · база знаний</span>
+              <h3>Баг исправили на одном проекте, а на соседнем он остался</h3>
+            </div>
+            <div class="case-grid">
+              <div class="case-col">
+                <div class="case-col__head">
+                  <span class="case-col__num">01</span>
+                  <span class="case-col__rule"></span>
+                </div>
+                <div class="case-col__label">Проблема</div>
+                <p>Два ecommerce-проекта одного бизнеса и программа лояльности в двух версиях. Исправления, сделанные на одном проекте, не доходили до другого: знание о них жило внутри одного репозитория.</p>
+              </div>
+              <div class="case-col">
+                <div class="case-col__head">
+                  <span class="case-col__num">02</span>
+                  <span class="case-col__rule"></span>
+                </div>
+                <div class="case-col__label">Решение</div>
+                <p>Завёл общую базу знаний для агента: отдельный git-репозиторий с принятыми решениями и антипаттернами, подключённый к обоим проектам. В AGENTS.md прописаны правила: перед проектированием прочитай базу, общее знание записывай туда. От RAG отказался, для этой задачи он избыточен.</p>
+              </div>
+              <div class="case-col case-col--result">
+                <div class="case-col__head">
+                  <span class="case-col__num">03</span>
+                  <span class="case-col__rule"></span>
+                </div>
+                <div class="case-col__label">Результат</div>
+                <p>По описанным дефектам агент сам проверил соседний проект. Проблемы, которые год было непонятно как чинить, стали задачами с готовым решением.</p>
+                <div class="case-metrics">
+                  <div>
+                    <div class="case-metric__value">5</div>
+                    <div class="case-metric__label">задач с готовым решением</div>
+                  </div>
+                  <div>
+                    <div class="case-metric__value">несколько часов</div>
+                    <div class="case-metric__label">на запуск базы</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case-card__foot">
+              <a class="text-link" href="https://t.me/real_ai_development/12" target="_blank" rel="noopener" aria-label="Подробно в канале: баг исправили на одном проекте, а на соседнем он остался">Подробно в канале →</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- ============================================================
-         Секция 4 — Как это работает
+         03 — Свой продукт (Oknoo.app)
+         Секция на белом фоне, чтобы tint-панель читалась.
          ============================================================ -->
-    <section class="section section--surface reveal" id="how">
+    <section class="section section--divided reveal" id="product">
       <div class="container">
-        <div class="section-head">
-          <span class="section-head__num">03</span>
-          <div>
-            <span class="eyebrow">Как это работает</span>
-            <h2>Те же AI-инструменты — но под управлением инженера.</h2>
+        <div class="product-panel">
+          <div class="product-panel__main">
+            <span class="pill">Свой продукт</span>
+            <div class="product-panel__eyebrow">
+              <span class="section-head__num">03</span>
+              <span class="eyebrow">Oknoo.app</span>
+            </div>
+            <h2>Онлайн-запись в одну кнопку.</h2>
+            <p class="product-panel__text">Мастер создаёт расписание под свои услуги и делится ссылкой, а клиент записывается в свободное окно одним кликом. Сначала сервис делался для бьюти-мастеров, но подходит всем, кто работает по записи.</p>
+            <p class="product-panel__text">Здесь я не только разработчик, но и product owner: веду бэклог, приоритизирую фичи, планирую релизы и запускаю рекламу. AI работает на каждом этапе, от идеи и дизайна до кода и аналитики. Это мой полигон: подходы, о которых пишу в канале, я сначала проверяю здесь, на своих деньгах.</p>
+            <div class="product-panel__actions">
+              <a class="btn-secondary" href="https://oknoo.app" target="_blank" rel="noopener">Открыть oknoo.app</a>
+              <a class="text-link" href="https://t.me/real_ai_development/7" target="_blank" rel="noopener">Серия Oknoo.app в канале →</a>
+            </div>
           </div>
-        </div>
-        <p class="prose">Я использую AI на этапе реализации — именно это даёт скорость. Но проектирование, архитектуру, ревью и контроль качества делаю сам. AI пишет черновик; каким будет результат и что уйдёт в прод — решаю и отвечаю я. Разница с тем, что было у вас, — не в инструментах, а в том, что у работы появляется владелец результата.</p>
-        <div class="steps">
-          <div class="step">
-            <div class="step__num">01</div>
-            <h3>Архитектура и границы.</h3>
-            <p>Прежде чем писать код, решаем, что именно делаем и — главное — чего не делаем.</p>
-          </div>
-          <div class="step">
-            <div class="step__num">02</div>
-            <h3>Реализация с AI.</h3>
-            <p>Здесь берётся скорость: недели вместо месяцев.</p>
-          </div>
-          <div class="step">
-            <div class="step__num">03</div>
-            <h3>Ревью и контроль.</h3>
-            <p>В прод идёт то, что я проверил и за что отвечаю, а не то, что просто сгенерировалось.</p>
-          </div>
+          <dl class="facts">
+            <div class="facts__row">
+              <dt>От идеи до запуска</dt>
+              <dd>3&nbsp;недели, в свободное от основной работы время</dd>
+            </div>
+            <div class="facts__row">
+              <dt>Команда</dt>
+              <dd>я и AI-агенты</dd>
+            </div>
+            <div class="facts__row">
+              <dt>В продакшене</dt>
+              <dd>реальные платежи и онлайн-чеки</dd>
+            </div>
+            <div class="facts__row">
+              <dt>AI-стек</dt>
+              <dd>Claude, Codex, GLM</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-         Секция 5 — Дисциплина скоупа
+         04 — Из канала
          ============================================================ -->
-    <section class="section reveal" id="scope">
+    <section class="section section--surface reveal" id="channel">
       <div class="container">
         <div class="section-head">
           <span class="section-head__num">04</span>
           <div>
-            <span class="eyebrow">Дисциплина скоупа</span>
-            <h2>Задачу намеренно держим маленькой.</h2>
+            <span class="eyebrow">Из канала</span>
+            <h2>О чём пишу в канале.</h2>
+            <p class="section-head__lead">Канал для тимлидов и продактов, которые внедряют AI в разработку. Обзоров инструментов там нет: только случаи из практики и выводы из них.</p>
           </div>
         </div>
-        <p class="scope-lead">Такие проекты чаще проваливаются не из-за сложности, а из-за расползания: маленькая доработка незаметно превращается в бесконечную. Поэтому границы зашиты в сам процесс.</p>
-        <ul class="marker-list">
-          <li>Начинаем с диагностики — понимаем задачу до того, как называем цену.</li>
-          <li>Фиксированный объём и фиксированная стоимость.</li>
-          <li>Явно проговариваем, что не входит.</li>
-          <li>Ориентир по срокам — до 2–3 месяцев. Если задача больше, скажу об этом сразу, а не через месяц работы.</li>
+
+        <div class="post-grid">
+          <a class="post-card" href="https://t.me/real_ai_development/5" target="_blank" rel="noopener" aria-labelledby="post-01">
+            <span class="post-card__num">01</span>
+            <h3 id="post-01">ТЗ нужно писать в контексте проекта</h3>
+            <p>«Не обращай внимания, это иишка писала»: почему итерации переезжают с кода на ТЗ.</p>
+          </a>
+          <a class="post-card" href="https://t.me/real_ai_development/6" target="_blank" rel="noopener" aria-labelledby="post-02">
+            <span class="post-card__num">02</span>
+            <h3 id="post-02">Нейросеть никогда не скажет «нет»</h3>
+            <p>Почему «работает на демо» ещё не значит «работает в системе».</p>
+          </a>
+          <a class="post-card" href="https://t.me/real_ai_development/8" target="_blank" rel="noopener" aria-labelledby="post-03">
+            <span class="post-card__num">03</span>
+            <h3 id="post-03">Дайте агенту способ проверить себя</h3>
+            <p>Сверка «база = API = страница», и почему способ проверки входит в ТЗ.</p>
+          </a>
+          <!-- Карточка 04 скрыта, пока пост не опубликован.
+               Чтобы показать: заменить [POST_URL_SLICING] на ссылку и убрать атрибут `hidden`. -->
+          <a class="post-card" href="[POST_URL_SLICING]" target="_blank" rel="noopener" aria-labelledby="post-04" hidden>
+            <span class="post-card__num">04</span>
+            <h3 id="post-04">Не режьте задачу на «измени тут, измени там»</h3>
+            <p>Агент выполнил все пункты и пропустил целый сценарий.</p>
+          </a>
+          <a class="post-card" href="https://t.me/real_ai_development/11" target="_blank" rel="noopener" aria-labelledby="post-05">
+            <span class="post-card__num">05</span>
+            <h3 id="post-05">Oknoo.app: как мы «потеряли» чеки</h3>
+            <p>Проверки покрывают план, а не реальность.</p>
+          </a>
+          <a class="post-card" href="https://t.me/real_ai_development/10" target="_blank" rel="noopener" aria-labelledby="post-06">
+            <span class="post-card__num">06</span>
+            <h3 id="post-06">ТЗ, написанные с ясной головой, отработали за меня джетлаг</h3>
+            <p>Продумывать дорого, а контролировать дёшево, и это можно разнести во времени.</p>
+          </a>
+        </div>
+
+        <div class="channel-actions">
+          <a class="btn-primary" href="https://t.me/real_ai_development" target="_blank" rel="noopener">Подписаться на канал</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         05 — Выступления
+         Скрыта до публикации доклада. Чтобы показать:
+         1. заменить [TALK_DATE] и [TALK_URL] на реальные значения;
+         2. убрать атрибут `hidden` у <section id="talks">;
+         3. пересчитать чередование фонов: #talks без section--surface,
+            #author — section--surface, #work — без, #contact — section--surface;
+         4. добавить в хедер пункт «Выступления» (#talks) — см. комментарий у хедера.
+         Новая строка = копия <li class="talk">.
+         ============================================================ -->
+    <section class="section reveal" id="talks" hidden>
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__num">05</span>
+          <div>
+            <span class="eyebrow">Выступления</span>
+            <h2>Доклады и эфиры.</h2>
+          </div>
+        </div>
+        <ul class="talk-list">
+          <li class="talk">
+            <span class="talk__meta">[TALK_DATE] · AI4Dev</span>
+            <h3>Агент пишет код, вы пишете ТЗ: куда переехала работа в разработке с AI</h3>
+            <a class="text-link" href="[TALK_URL]" target="_blank" rel="noopener" aria-label="Смотреть запись: Агент пишет код, вы пишете ТЗ">Смотреть запись →</a>
+          </li>
         </ul>
       </div>
     </section>
 
     <!-- ============================================================
-         Секция 6 — Что это / чего не ждать
-         ============================================================ -->
-    <section class="section section--surface reveal" id="what">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-head__num">05</span>
-          <div>
-            <span class="eyebrow">Ожидания</span>
-            <h2 class="h2-wide">Что это — и чего ждать не стоит.</h2>
-          </div>
-        </div>
-        <div class="this-that">
-          <div class="this-that__col this-that__col--yes">
-            <div class="this-that__title this-that__title--yes">Это</div>
-            <ul>
-              <li>Работа senior-инженера, который отвечает за результат.</li>
-              <li>Фокус на качестве и на том, чтобы решение продолжало работать после сдачи.</li>
-              <li>Прозрачный процесс: вы понимаете, что делается и зачем.</li>
-            </ul>
-          </div>
-          <div class="this-that__col this-that__col--no">
-            <div class="this-that__title this-that__title--no">Это не</div>
-            <ul>
-              <li>Не самый дешёвый вариант на рынке.</li>
-              <li>Не генерация тонны кода без разбора.</li>
-              <li>Не «перепишем вам всё с нуля».</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         Секция 7 — Кто за этим стоит
+         06 — Об авторе
          ============================================================ -->
     <section class="section reveal" id="author">
       <div class="container">
         <div class="section-head">
           <span class="section-head__num">06</span>
           <div>
-            <span class="eyebrow">Кто делает</span>
-            <h2>Кто за этим стоит.</h2>
+            <span class="eyebrow">Об авторе</span>
+            <h2>Кто я.</h2>
           </div>
         </div>
         <div class="author">
@@ -205,18 +415,16 @@
               <img src="assets/photo_landing.jpg" alt="Евгений Холин" loading="lazy" width="360" height="450">
             </div>
             <div class="author__id">
-              <div>
-                <div class="author__name">Евгений Холин</div>
-              </div>
+              <div class="author__name">Евгений Холин</div>
             </div>
           </div>
           <div class="author__main">
-            <p class="author__lead">Евгений Холин — тимлид и senior fullstack-разработчик, 15+ лет в разработке и запуске продуктов.</p>
-            <p class="author__body">Строил и вёл системы от legacy-стеков до современной инфраструктуры; последние годы работаю в связке «архитектор + AI-агенты на реализации» — сам проектирую и держу качество, скорость беру за счёт инструментов. В своём канале пишу про AI-разработку с пользой для бизнеса — если вы пришли оттуда, вы уже примерно представляете, как я думаю о задачах.</p>
-            <p class="author__body">Мне нравится ровно эта задача — взять систему, которая перестала успевать за бизнесом, разобраться, что именно сломалось, и сделать так, чтобы заработало. Это редко красиво и почти всегда непросто, но когда запутанный процесс вдруг начинает идти гладко — вот это для меня и есть интересная работа. Берусь я за такое не чтобы что-то доказать: то, что нужно было, я уже прошёл. Берусь, потому что правда люблю этот тип задач, — и это, наверное, лучшая гарантия, что вашу я доведу до конца.</p>
+            <p class="author__lead">Евгений Холин&nbsp;— тимлид и senior fullstack-разработчик, 15+&nbsp;лет в разработке и запуске продуктов.</p>
+            <p class="author__body">Строил и вёл системы от legacy-стеков до современной инфраструктуры. Сейчас работаю в связке «инженер + AI-агенты»: проектирую, ставлю задачи и держу качество сам, а скорость беру за счёт инструментов. Основной инструмент&nbsp;— Claude Code. Работаю так на нескольких коммерческих проектах, от ecommerce до внутренних систем, и в собственном SaaS.</p>
+            <p class="author__body">Мне интересно не то, на что AI способен на демо, а то, что продолжает работать через полгода после релиза. Об этом и пишу в канале: на реальных случаях, с цифрами и с тем, что пошло не так.</p>
             <div class="author__links">
               <a class="text-link" href="https://t.me/real_ai_development" target="_blank" rel="noopener">Telegram-канал</a>
-              <a class="text-link" href="https://t.me/eholin" target="_blank" rel="noopener">Telegram →</a>
+              <a class="text-link" href="https://t.me/eholin" target="_blank" rel="noopener" aria-label="Написать Евгению Холину в Telegram">Telegram →</a>
             </div>
           </div>
         </div>
@@ -224,78 +432,54 @@
     </section>
 
     <!-- ============================================================
-         Секция 8 — Кейс
-         Скрыта по умолчанию (реальных данных пока нет).
-         Чтобы показать: убрать атрибут `hidden` у <section id="case">.
-         Второй/третий кейс = копирование <article class="case-card">.
+         07 — Работа со мной
          ============================================================ -->
-    <section class="section section--surface reveal" id="case" hidden>
+    <section class="section section--surface reveal" id="work">
       <div class="container">
         <div class="section-head">
           <span class="section-head__num">07</span>
           <div>
-            <span class="eyebrow">Кейс</span>
-            <h2>Как это выглядит на практике.</h2>
+            <span class="eyebrow">Работа со мной</span>
+            <h2>Если нужна помощь с задачей.</h2>
           </div>
         </div>
-
-        <article class="case-card">
-          <div class="case-grid">
-            <div class="case-col">
-              <div class="case-col__head">
-                <span class="case-col__num">01</span>
-                <span class="case-col__rule"></span>
-              </div>
-              <div class="case-col__label">Проблема</div>
-              <p>[Что было сломано в процессе — одна фраза.]</p>
-            </div>
-            <div class="case-col">
-              <div class="case-col__head">
-                <span class="case-col__num">02</span>
-                <span class="case-col__rule"></span>
-              </div>
-              <div class="case-col__label">Решение</div>
-              <p>[Что сделал и — важно — чего НЕ трогал. 1–2 фразы.]</p>
-            </div>
-            <div class="case-col case-col--result">
-              <div class="case-col__head">
-                <span class="case-col__num">03</span>
-                <span class="case-col__rule"></span>
-              </div>
-              <div class="case-col__label">Результат</div>
-              <p>[Результат в измеримых словах.]</p>
-              <div class="case-metrics">
-                <div>
-                  <div class="case-metric__value">—</div>
-                  <div class="case-metric__label">метрика</div>
-                </div>
-                <div>
-                  <div class="case-metric__value">—</div>
-                  <div class="case-metric__label">срок</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Опциональная цитата клиента:
-          <p class="case-quote">«[Короткая цитата клиента.]»</p>
-          -->
-        </article>
-
+        <div class="compare-grid">
+          <article class="option-card">
+            <h3>Доработка бизнес-софта.</h3>
+            <p>Адаптирую существующую CRM или внутренний инструмент под изменившийся процесс. Фиксированный объём и стоимость, без переписывания с нуля.</p>
+          </article>
+          <article class="option-card">
+            <h3>Консультация по AI-разработке.</h3>
+            <p>Разбираем, как ваша команда работает с агентами, где теряется качество и что поменять в постановке задач и проверке.</p>
+          </article>
+          <article class="option-card">
+            <h3>Внедрение AI-разработки в команду.</h3>
+            <p>Помогаю выстроить процесс: ТЗ для агента, самопроверка, общая база знаний, правила ревью. Под ваши проекты, а не по шаблону.</p>
+          </article>
+        </div>
+        <div class="work-note">
+          <p>Начинаем с короткого бесплатного разговора: ваша ли это задача и мой ли это профиль.</p>
+          <a class="text-link" href="https://t.me/eholin" target="_blank" rel="noopener">Написать в Telegram →</a>
+        </div>
       </div>
     </section>
 
     <!-- ============================================================
-         Секция 9 — Следующий шаг (якорь #contact)
+         Следующий шаг (#contact)
          ============================================================ -->
-    <section class="section section--surface reveal" id="contact">
+    <section class="section reveal" id="contact">
       <div class="container">
         <div class="cta-panel">
           <span class="eyebrow">Следующий шаг</span>
-          <h2>Начнём с разговора.</h2>
-          <p class="cta-panel__text">Первый разговор — бесплатный и ни к чему не обязывает. Смотрим на процесс и на вашу систему и вместе решаем главное: ваша ли это задача и мой ли это профиль. Если да — формулирую, что и как дорабатываем, с фиксированной оценкой.</p>
+          <h2>Подписывайтесь на канал.</h2>
+          <p class="cta-panel__text">Новые случаи из практики: что поручил агенту, что пошло не так и что я поменял в процессе.</p>
           <div class="cta-panel__actions">
-            <a class="btn-primary" href="https://t.me/eholin" target="_blank" rel="noopener">Написать мне</a>
+            <a class="btn-primary" href="https://t.me/real_ai_development" target="_blank" rel="noopener">Подписаться на канал</a>
+            <a class="text-link" href="https://t.me/eholin" target="_blank" rel="noopener">или написать лично →</a>
           </div>
+          <p class="cta-panel__remarks">
+            <span>Для тимлидов и продактов</span><span aria-hidden="true">·</span><span>без обзоров инструментов</span><span aria-hidden="true">·</span><span>только практика</span>
+          </p>
         </div>
       </div>
     </section>
@@ -312,7 +496,7 @@
         <a class="text-link" href="https://t.me/real_ai_development" target="_blank" rel="noopener" aria-label="Telegram-канал Евгения Холина">Telegram-канал</a>
         <a class="text-link" href="https://t.me/eholin" target="_blank" rel="noopener" aria-label="Telegram Евгения Холина">Telegram</a>
       </div>
-      <span class="site-footer__copy">Доработка бизнес-софта · © 2026</span>
+      <span class="site-footer__copy">Разработка с AI-агентами · ©&nbsp;2026</span>
     </div>
   </footer>
 
