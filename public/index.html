@@ -126,10 +126,11 @@
         </div>
 
         <div class="case-list">
-          <article class="case-card">
+          <article class="case-card case-card--featured">
             <div class="case-card__head">
-              <span class="case-card__label">Легаси · рефакторинг</span>
-              <h3>10&nbsp;лет техдолга за 6&nbsp;месяцев: монолит, один разработчик и AI-агент</h3>
+              <span class="pill case-card__pill">Главный кейс</span>
+              <span class="case-card__label">Легаси · рефакторинг · главный кейс</span>
+              <h3>Рефакторинг PHP-монолита с AI-агентами без остановки разработки</h3>
             </div>
             <div class="case-grid">
               <div class="case-col">
@@ -138,7 +139,7 @@
                   <span class="case-col__rule"></span>
                 </div>
                 <div class="case-col__label">Проблема</div>
-                <p>Монолит, который развивался 10&nbsp;лет: больше 2&nbsp;000 PHP-файлов и 180&nbsp;тысяч строк, PHP&nbsp;7.4, устаревший фреймворк, god-модели на тысячи строк. Рефакторинг такого масштаба было не продать бизнесу: долго, дорого, и фичи на это время встают.</p>
+                <p>Монолит, который развивался 10&nbsp;лет: больше 2&nbsp;000 PHP-файлов и 180&nbsp;тысяч строк, PHP&nbsp;7.4, устаревший фреймворк, god-модели на тысячи строк. Автотестов и инструментов статического анализа кода и структуры не было совсем. Рефакторинг такого масштаба было не продать бизнесу: долго, дорого, и фичи на это время встают.</p>
               </div>
               <div class="case-col">
                 <div class="case-col__head">
@@ -146,7 +147,7 @@
                   <span class="case-col__rule"></span>
                 </div>
                 <div class="case-col__label">Решение</div>
-                <p>Сначала агент покрыл проект автотестами, это страховочная сетка. Дальше поэтапно: PHP&nbsp;8.4 и свежие зависимости, переход с MVC на API + SPA, чистая архитектура. Правила из ADR стали автоматическими проверками (PHPStan, deptrac). Работал в одиночку и параллельно с продуктовыми задачами.</p>
+                <p>Сначала агент с нуля покрыл проект автотестами, это страховочная сетка. Дальше поэтапно: PHP&nbsp;8.4 и свежие зависимости, переход с MVC на API + SPA, чистая архитектура. Правила из ADR стали автоматическими проверками (PHPStan, deptrac). Шесть месяцев работал в одиночку и параллельно с продуктовыми задачами. Весь frontend написан агентом, отдельный frontend-разработчик не потребовался.</p>
               </div>
               <div class="case-col case-col--result">
                 <div class="case-col__head">
@@ -154,21 +155,27 @@
                   <span class="case-col__rule"></span>
                 </div>
                 <div class="case-col__label">Результат</div>
-                <p>Техдолг почти закрыт, а багов в проде почти не было. Чем чище становилась архитектура, тем реже ошибался агент: рефакторинг ускорял сам себя.</p>
+                <p>Новые функции стали выходить на 30–40% быстрее от постановки до продакшена. Не потребовалось нанимать двух администраторов, а сопровождение перешло от команды из трех разработчиков к одному&nbsp;Senior Backend + AI. Совокупная экономия после рефакторинга&nbsp;— порядка 700&nbsp;тысяч рублей в месяц.</p>
                 <div class="case-metrics">
                   <div>
-                    <div class="case-metric__value">6&nbsp;мес</div>
-                    <div class="case-metric__label">без остановки разработки фич</div>
+                    <div class="case-metric__value">30–40%</div>
+                    <div class="case-metric__label">быстрее полный цикл поставки</div>
                   </div>
                   <div>
-                    <div class="case-metric__value">2–3&nbsp;дня</div>
-                    <div class="case-metric__label">на продуктовую задачу с тестами вместо недели</div>
+                    <div class="case-metric__value">~700&nbsp;тыс.&nbsp;₽/мес.</div>
+                    <div class="case-metric__label">расчётный эффект экономии на ФОТ</div>
+                  </div>
+                  <div>
+                    <div class="case-metric__value">≈3-4&nbsp;мес</div>
+                    <div class="case-metric__label">расчётная окупаемость после завершения</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="case-card__foot">
-              <a class="text-link" href="https://youtube.com/live/tNPRpRW8NW8?feature=share" target="_blank" rel="noopener" aria-label="Смотреть запись доклада: Агент пишет код, вы пишете ТЗ">Смотреть запись →</a>
+              <div class="case-card__links">
+                <a class="text-link" href="cases/php-monolith-ai-refactoring/">Читать полный кейс →</a>
+              </div>
             </div>
           </article>
 

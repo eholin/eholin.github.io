@@ -450,6 +450,10 @@ a { color: inherit; }
   border-radius: var(--radius-lg);
   padding: 48px;
 }
+.case-card--featured {
+  background: var(--accent-tint);
+  border: 1.5px solid var(--accent);
+}
 .case-list {
   display: flex;
   flex-direction: column;
@@ -457,6 +461,9 @@ a { color: inherit; }
 }
 .case-card__head {
   margin-bottom: 36px;
+}
+.case-card__pill {
+  margin-bottom: 16px;
 }
 .case-card__label {
   display: block;
@@ -478,6 +485,17 @@ a { color: inherit; }
   margin-top: 36px;
   padding-top: 24px;
   border-top: 1px solid var(--border-subtle);
+}
+.case-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+}
+.case-card__links .text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 .case-grid {
   display: grid;
