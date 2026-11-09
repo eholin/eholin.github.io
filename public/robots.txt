@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eholin.github.io/sitemap.xml
